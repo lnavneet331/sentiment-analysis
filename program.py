@@ -9,12 +9,12 @@ df.isnull().sum()
 
 
 
-
-df = pd.read_csv('Restaurant_Reviews.tsv', sep='\t')
-
-
-# In[3]:
+# In[4]:
 
 
-#df.head()
+#df.tail()
+
+
+# In[5]:
+
 
