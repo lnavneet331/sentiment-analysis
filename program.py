@@ -99,3 +99,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
+# In[12]:
+
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
+# In[13]:
+
+
