@@ -19,13 +19,13 @@ import seaborn as sns
 
 
 
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
-import pandas as pd
+df = pd.read_csv('Restaurant_Reviews.tsv', sep='\t')
 
 
-# In[2]:
+# In[3]:
+
+
+#df.head()
+
