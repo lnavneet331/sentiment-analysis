@@ -8,13 +8,13 @@ df.isnull().sum()
 # In[10]:
 
 
-#df.shape
 
 
-# In[6]:
+df.duplicated().sum()
 
 
-#df.columns
+# In[8]:
 
 
-# In[7]:
+df = df.drop_duplicates()
+
