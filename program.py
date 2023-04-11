@@ -19,3 +19,13 @@ df = pd.read_csv('Restaurant_Reviews.tsv', sep='\t')
 
 #df.head()
 
+
+# In[4]:
+
+
+#df.tail()
+
+
+# In[5]:
+
+
