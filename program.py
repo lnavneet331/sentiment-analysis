@@ -1,10 +1,10 @@
-
-# In[4]:
-
-
-#df.tail()
+#df.shape
 
 
-# In[5]:
+# In[6]:
 
 
+#df.columns
+
+
+# In[7]:
