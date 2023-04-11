@@ -9,12 +9,12 @@ df.isnull().sum()
 
 
 
-
-df.duplicated().sum()
-
-
-# In[8]:
+# In[9]:
 
 
-df = df.drop_duplicates()
+df.isnull().sum()
+
+
+# In[10]:
+
 
