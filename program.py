@@ -19,13 +19,13 @@ import seaborn as sns
 
 
 
-
-# In[9]:
-
-
-df.isnull().sum()
+#df.info()
 
 
-# In[10]:
+# In[11]:
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
