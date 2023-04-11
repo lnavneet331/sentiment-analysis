@@ -69,3 +69,13 @@ df = pd.read_csv('Restaurant_Reviews.tsv', sep='\t')
 
 
 # In[7]:
+
+
+df.duplicated().sum()
+
+
+# In[8]:
+
+
+df = df.drop_duplicates()
+
