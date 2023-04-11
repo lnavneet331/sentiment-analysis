@@ -19,13 +19,13 @@ import seaborn as sns
 
 
 
-#df.info()
+# In[12]:
 
 
-# In[11]:
+import warnings
+warnings.filterwarnings('ignore')
 
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+# In[13]:
 
 
