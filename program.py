@@ -29,3 +29,13 @@ df = pd.read_csv('Restaurant_Reviews.tsv', sep='\t')
 # In[5]:
 
 
+#df.shape
+
+
+# In[6]:
+
+
+#df.columns
+
+
+# In[7]:
