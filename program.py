@@ -129,3 +129,13 @@ fig.add_trace(go.Bar(
     name='Dislike',
     text=[balance_counts[1]],
     textposition='auto',
+    marker_color= 'red'
+))
+fig.update_layout(
+    title='<span style="font-size:32px; font-family:Times New Roman">Dataset distribution by Likes</span>'
+)
+fig.show()
+
+
+# In[19]:
+
