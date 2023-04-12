@@ -149,3 +149,13 @@ df['Review_Length'] = df['Review'].apply(lambda x: len(x.split(' ')))
 plt.figure(figsize=(15,6))
 sns.histplot(df['Review_Length'], bins = 20, kde = True, palette = 'hls')
 plt.show()
+
+
+# In[21]:
+
+
+like_df = df[df['Liked'] == 0]['Review_Length'].value_counts().sort_index()
+dislike_df = df[df['Liked'] == 1]['Review_Length'].value_counts().sort_index()
+
+fig = go.Figure()
+fig.add_trace(go.Scatter(
