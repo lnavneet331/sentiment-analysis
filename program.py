@@ -49,3 +49,13 @@ df.duplicated().sum()
 
 df = df.drop_duplicates()
 
+
+# In[9]:
+
+
+df.isnull().sum()
+
+
+# In[10]:
+
+
