@@ -139,3 +139,13 @@ fig.show()
 
 # In[19]:
 
+
+df['Review_Length'] = df['Review'].apply(lambda x: len(x.split(' ')))
+
+
+# In[20]:
+
+
+plt.figure(figsize=(15,6))
+sns.histplot(df['Review_Length'], bins = 20, kde = True, palette = 'hls')
+plt.show()
