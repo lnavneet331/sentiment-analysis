@@ -89,3 +89,13 @@ df['Liked'].value_counts()
 
 
 # In[15]:
+
+
+plt.figure(figsize=(15,6))
+sns.countplot(df['Liked'], data = df, palette = 'hls')
+plt.show()
+
+
+# In[16]:
+
+
