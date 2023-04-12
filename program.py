@@ -109,3 +109,13 @@ balance_counts = df.groupby('Liked')['Liked'].agg('count').values
 from plotly import graph_objs as go
 import plotly.express as px
 import plotly.figure_factory as ff
+
+
+# In[18]:
+
+
+fig = go.Figure()
+fig.add_trace(go.Bar(
+    x = [0],
+    y=[balance_counts[0]],
+    name='Like',
