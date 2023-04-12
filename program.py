@@ -79,3 +79,13 @@ warnings.filterwarnings('ignore')
 # In[13]:
 
 
+df['Liked'].unique()
+
+
+# In[14]:
+
+
+df['Liked'].value_counts()
+
+
+# In[15]:
