@@ -99,3 +99,13 @@ plt.show()
 # In[16]:
 
 
+balance_counts = df.groupby('Liked')['Liked'].agg('count').values
+#balance_counts
+
+
+# In[17]:
+
+
+from plotly import graph_objs as go
+import plotly.express as px
+import plotly.figure_factory as ff
