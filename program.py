@@ -229,3 +229,13 @@ df_new['Review']= df_new['Review'].apply(lambda x:remove_punctuation(x))
 
 # In[29]:
 
+
+import re
+def tokenization(text):
+    tokens = re.split('W+',text)
+    return tokens
+df_new['Review']= df_new['Review'].apply(lambda x: tokenization(x))
+
+
+# In[30]:
+
