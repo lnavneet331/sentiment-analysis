@@ -219,3 +219,13 @@ import string
 
 
 # In[28]:
+
+
+def remove_punctuation(text):
+    punctuationfree="".join([i for i in text if i not in string.punctuation])
+    return punctuationfree
+df_new['Review']= df_new['Review'].apply(lambda x:remove_punctuation(x))
+
+
+# In[29]:
+
