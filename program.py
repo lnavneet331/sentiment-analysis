@@ -269,3 +269,13 @@ porter_stemmer = PorterStemmer()
 
 
 def stemming(text):
+    stem_text = "".join([porter_stemmer.stem(word) for word in text])
+    return stem_text
+df_new['Review']=df_new['Review'].apply(lambda x: stemming(x))
+
+
+# In[35]:
+
+
+from nltk.stem import WordNetLemmatizer
+wordnet_lemmatizer = WordNetLemmatizer()
