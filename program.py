@@ -209,3 +209,13 @@ def clean_text(text):
 
 
 df_new.message = df_new.Review.apply(lambda x: clean_text(x))
+
+
+# In[27]:
+
+
+import string
+#string.punctuation
+
+
+# In[28]:
