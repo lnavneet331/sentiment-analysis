@@ -249,3 +249,13 @@ stopwords = nltk.corpus.stopwords.words('english')
 
 def remove_stopwords(text):
     output= " ".join(i for i in text if i not in stopwords)
+    return output
+
+
+# In[32]:
+
+
+df_new['Review']= df_new['Review'].apply(lambda x:remove_stopwords(x))
+
+
+# In[33]:
