@@ -189,3 +189,13 @@ fig.show()
 
 
 df.Review_Length.describe()
+
+
+# In[24]:
+
+
+df_new = df.copy()
+
+
+# In[25]:
+
