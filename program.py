@@ -169,3 +169,13 @@ fig.add_trace(go.Scatter(
     x=dislike_df.index,
     y=dislike_df.values,
     name=1,
+    fill='tozeroy',
+    marker_color= 'red',
+))
+fig.update_layout(
+    title='<span style="font-size:32px; font-family:Times New Roman">Data Distribution in Different Fields</span>'
+)
+fig.update_xaxes(range=[0, 70])
+fig.show()
+
+
