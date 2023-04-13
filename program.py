@@ -159,3 +159,13 @@ dislike_df = df[df['Liked'] == 1]['Review_Length'].value_counts().sort_index()
 
 fig = go.Figure()
 fig.add_trace(go.Scatter(
+    x=like_df.index,
+    y=like_df.values,
+    name= 0,
+    fill='tozeroy',
+    marker_color= 'blue',
+))
+fig.add_trace(go.Scatter(
+    x=dislike_df.index,
+    y=dislike_df.values,
+    name=1,
