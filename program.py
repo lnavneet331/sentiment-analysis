@@ -239,3 +239,13 @@ df_new['Review']= df_new['Review'].apply(lambda x: tokenization(x))
 
 # In[30]:
 
+
+import nltk
+stopwords = nltk.corpus.stopwords.words('english')
+
+
+# In[31]:
+
+
+def remove_stopwords(text):
+    output= " ".join(i for i in text if i not in stopwords)
