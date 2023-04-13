@@ -199,3 +199,13 @@ df_new = df.copy()
 
 # In[25]:
 
+
+def clean_text(text):
+    text = text.lower() 
+    return text.strip()
+
+
+# In[26]:
+
+
+df_new.message = df_new.Review.apply(lambda x: clean_text(x))
