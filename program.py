@@ -259,3 +259,13 @@ df_new['Review']= df_new['Review'].apply(lambda x:remove_stopwords(x))
 
 
 # In[33]:
+
+
+from nltk.stem.porter import PorterStemmer
+porter_stemmer = PorterStemmer()
+
+
+# In[34]:
+
+
+def stemming(text):
