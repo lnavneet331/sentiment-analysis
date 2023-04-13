@@ -179,3 +179,13 @@ fig.update_xaxes(range=[0, 70])
 fig.show()
 
 
+# In[22]:
+
+
+#df
+
+
+# In[23]:
+
+
+df.Review_Length.describe()
