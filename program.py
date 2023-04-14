@@ -309,3 +309,13 @@ df_new['Review'] = df_new.Review.apply(lambda x: clean_text(x))
 
 
 import spacy
+nlp = spacy.load('en_core_web_sm')
+
+
+# In[40]:
+
+
+stopwords = nlp.Defaults.stop_words
+def lemmatizer(text):
+    doc = nlp(text)
+    sent = [token.lemma_ for token in doc if not token.text in set(stopwords)]
