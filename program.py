@@ -319,3 +319,13 @@ stopwords = nlp.Defaults.stop_words
 def lemmatizer(text):
     doc = nlp(text)
     sent = [token.lemma_ for token in doc if not token.text in set(stopwords)]
+    return ' '.join(sent)
+
+
+# In[41]:
+
+
+df_new['Review'] =  df_new.Review.apply(lambda x: lemmatizer(x))
+
+
+# In[42]:
