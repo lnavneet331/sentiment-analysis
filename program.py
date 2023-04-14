@@ -389,3 +389,13 @@ def remove_emojis(data):
 df_new['Review'] = df_new.Review.apply(lambda x: remove_emojis(x))
 
 
+# In[50]:
+
+
+#df_new
+
+
+# In[51]:
+
+
+from PIL import Image
