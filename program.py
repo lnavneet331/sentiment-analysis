@@ -279,3 +279,13 @@ df_new['Review']=df_new['Review'].apply(lambda x: stemming(x))
 
 from nltk.stem import WordNetLemmatizer
 wordnet_lemmatizer = WordNetLemmatizer()
+
+
+# In[36]:
+
+
+def lemmatizer(text):
+    lemm_text = "".join([wordnet_lemmatizer.lemmatize(word) for word in text])
+    return lemm_text
+df_new['Review']=df_new['Review'].apply(lambda x:lemmatizer(x))
+
