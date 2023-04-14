@@ -299,3 +299,13 @@ def clean_text(text):
     return text.strip()
 
 
+# In[38]:
+
+
+df_new['Review'] = df_new.Review.apply(lambda x: clean_text(x))
+
+
+# In[39]:
+
+
+import spacy
