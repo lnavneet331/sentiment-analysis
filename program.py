@@ -349,3 +349,13 @@ def remove_digits(text):
     clean_text = re.sub(r"\b[0-9]+\b\s*", "", text)
     return(text)
 
+
+# In[45]:
+
+
+df_new['Review'] = df_new.Review.apply(lambda x: remove_digits(x))
+
+
+# In[46]:
+
+
