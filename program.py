@@ -289,3 +289,13 @@ def lemmatizer(text):
     return lemm_text
 df_new['Review']=df_new['Review'].apply(lambda x:lemmatizer(x))
 
+
+# In[37]:
+
+
+def clean_text(text):
+    text = re.sub('\[.*\]','', text).strip() # Remove text in square brackets
+    text = re.sub('\S*\d\S*\s*','', text).strip()  # Remove words containing numbers
+    return text.strip()
+
+
