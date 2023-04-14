@@ -359,3 +359,13 @@ df_new['Review'] = df_new.Review.apply(lambda x: remove_digits(x))
 # In[46]:
 
 
+def remove_digits1(sample_text):
+    clean_text = " ".join([w for w in sample_text.split() if not w.isdigit()]) # Side effect: removes extra spaces
+    return(clean_text)
+
+
+# In[47]:
+
+
+df_new['Review'] = df_new.Review.apply(lambda x: remove_digits1(x))
+
