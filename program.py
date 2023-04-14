@@ -329,3 +329,13 @@ df_new['Review'] =  df_new.Review.apply(lambda x: lemmatizer(x))
 
 
 # In[42]:
+
+
+def remove_urls(vTEXT):
+    vTEXT = re.sub(r'(https|http)?:\/\/(\w|\.|\/|\?|\=|\&|\%)*\b', '', vTEXT, flags=re.MULTILINE)
+    return(vTEXT)
+
+
+# In[43]:
+
+
