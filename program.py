@@ -409,3 +409,13 @@ import numpy as np
 
 
 # In[53]:
+
+
+twitter_mask = np.array(Image.open('twitter_mask.png'))
+
+wc = WordCloud(
+    background_color='white', 
+    max_words=200, 
+    mask=twitter_mask,
+)
+wc.generate(' '.join(text for text in df_new.loc[df_new['Liked'] == 0, 'Review']))
