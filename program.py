@@ -499,3 +499,13 @@ y_pred_class = pipe.predict(x_test)
 
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
+
+# In[62]:
+
+
+print(accuracy_score(y_test, y_pred_class))
+
+
+# In[63]:
+
+
