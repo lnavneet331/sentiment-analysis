@@ -449,3 +449,13 @@ plt.show()
 # In[55]:
 
 
+x = df_new['Review']
+y = df_new['Liked']
+
+print(len(x), len(y))
+
+
+# In[56]:
+
+
+from sklearn.model_selection import train_test_split
