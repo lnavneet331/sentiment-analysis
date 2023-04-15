@@ -469,3 +469,13 @@ print(len(x_test), len(y_test))
 
 
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.pipeline import Pipeline
+
+
+# In[58]:
+
+
+from sklearn.naive_bayes import MultinomialNB
+
+
