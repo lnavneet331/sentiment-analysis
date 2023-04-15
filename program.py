@@ -489,3 +489,13 @@ pipe = Pipeline([('bow', CountVectorizer()),
 
 # In[60]:
 
+
+pipe.fit(x_train, y_train)
+y_pred_class = pipe.predict(x_test)
+
+
+# In[61]:
+
+
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
