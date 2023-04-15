@@ -459,3 +459,13 @@ print(len(x), len(y))
 
 
 from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42)
+print(len(x_train), len(y_train))
+print(len(x_test), len(y_test))
+
+
+# In[57]:
+
+
+from sklearn.feature_extraction.text import CountVectorizer
