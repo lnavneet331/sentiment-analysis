@@ -399,3 +399,13 @@ df_new['Review'] = df_new.Review.apply(lambda x: remove_emojis(x))
 
 
 from PIL import Image
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
+
+# In[52]:
+
+
+import numpy as np
+
+
+# In[53]:
