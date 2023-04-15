@@ -439,3 +439,13 @@ wc = WordCloud(
 )
 wc.generate(' '.join(text for text in df_new.loc[df_new['Liked'] == 1, 'Review']))
 plt.figure(figsize=(18,10))
+plt.title('Top words for 1 Reviews', 
+          fontdict={'size': 22,  'verticalalignment': 'bottom'})
+plt.imshow(wc)
+plt.axis("off")
+plt.show()
+
+
+# In[55]:
+
+
