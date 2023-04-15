@@ -479,3 +479,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.naive_bayes import MultinomialNB
 
 
+# In[59]:
+
+
+pipe = Pipeline([('bow', CountVectorizer()), 
+                 ('tfid', TfidfTransformer()),  
+                 ('model', MultinomialNB())])
+
+
+# In[60]:
+
