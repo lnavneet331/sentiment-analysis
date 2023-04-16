@@ -529,3 +529,13 @@ pipe = Pipeline([
     ('model', xgb.XGBClassifier(
         learning_rate=0.1,
         max_depth=7,
+        n_estimators=80,
+        use_label_encoder=False,
+        eval_metric='auc',
+        # colsample_bytree=0.8,
+        # subsample=0.7,
+        # min_child_weight=5,
+    ))
+])
+
+
