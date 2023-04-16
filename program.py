@@ -539,3 +539,13 @@ pipe = Pipeline([
 ])
 
 
+# In[66]:
+
+
+pipe.fit(x_train, y_train)
+y_pred_class = pipe.predict(x_test)
+
+
+# In[67]:
+
+
