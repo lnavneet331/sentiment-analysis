@@ -559,3 +559,7 @@ print(confusion_matrix(y_test, y_pred_class))
 
 
 # In[69]:
+
+
+print(classification_report(y_test, y_pred_class))
+
