@@ -519,3 +519,13 @@ print(classification_report(y_test, y_pred_class))
 
 
 # In[65]:
+
+
+import xgboost as xgb
+
+pipe = Pipeline([
+    ('bow', CountVectorizer()), 
+    ('tfid', TfidfTransformer()),  
+    ('model', xgb.XGBClassifier(
+        learning_rate=0.1,
+        max_depth=7,
