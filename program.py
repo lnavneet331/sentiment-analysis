@@ -549,3 +549,13 @@ y_pred_class = pipe.predict(x_test)
 # In[67]:
 
 
+print(accuracy_score(y_test, y_pred_class))
+
+
+# In[68]:
+
+
+print(confusion_matrix(y_test, y_pred_class))
+
+
+# In[69]:
